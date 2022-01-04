@@ -4,7 +4,7 @@ from django.db.models.fields import DateTimeField, SlugField
 
 class Article(models.Model):
     title = models.CharField(max_length=100)
-    Slug = models.SlugField()
+    slug = models.SlugField()
     body = models.TextField()
     date =DateTimeField(auto_now_add=True)
 
